@@ -5,7 +5,7 @@ import ListTitle from './ListTitle.vue';
     data:  {type:Array}
     },
   components:{
-    ListTitle
+    ListTitle,
   }
  }
 

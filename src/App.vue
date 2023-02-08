@@ -9,6 +9,10 @@ const products=[
   {name:"Product 3", price:100 },
   {name:"Product 4", price:100 },
 ]
+const cart=[
+{name:"Product 3", price:100 },
+  {name:"Product 4", price:100 },
+]
 </script>
 
 <template>
