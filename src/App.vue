@@ -146,7 +146,7 @@
 
 
 <script>
-import Form from './Form.vue'
+import Form from '../Form.vue'
 import Card from './Card.vue'
 import WatchlistItem from './WatchlistItem.vue'
 
