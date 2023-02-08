@@ -1,0 +1,3 @@
+<template>
+    Cart vue
+</template>
