@@ -12,7 +12,7 @@ const products=[
 </script>
 
 <template>
-  <div class="container flex flex-row">
+  <div class="container flex flex-row mt-4 mx-auto">
    <Products :data="products"/>
    <Cart/>
   </div>
