@@ -1,15 +1,18 @@
-<script>
+<script setup>
 import ListTitle from './ListTitle.vue';
-const props = {
-    data: { type: Array, required: true }
-};
+import ProductList from './ProductList.vue';
+import { useStore } from 'vuex';
+
+const store =useStore()
+const title = store.state.cart.title
+const cartdata = store.state.cart.data
+const action = store.state.cart.action
+
 </script>
 
 <template>
   <div class="w-full">
-    <ListTitle title="WishList"/>
-    <ul>
-        <li v-for="item in data" :key="item.index">{{ item.name }} - {{ item.price }}</li>
-    </ul>
+    <ListTitle :title="title"/>
+    <ProductList :data="cartdata" :action="action"/>
   </div>
 </template>
