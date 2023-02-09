@@ -4,19 +4,19 @@ import { useStore } from 'vuex';
 
 const props= defineProps({
     tocart:  {type:Boolean, required: false, default:true},
-      id:  {type:Boolean, required:true }
+      id:  { type: Number, required:true }
 })
 
-const store =useStore()
+const store = useStore()
 function addToWishList(){
-  let product=store.state.product.data.find(item => item.id ==props.id)
+  let product=store.state.products.data.find(item => item.id ==props.id)
   store.state.products.data.splice(store.state.products.data.indexOf(product),1)
   store.state.cart.data.push(product)
 }
 function removeFromWishList(){
-    let product=store.state.cart.data.find(item => item.id ==props.id)
-  store.state.cart.data.splice(store.state.cart.data.indexOf(product),1)
-  store.state.product.data.push(product)
+    let product=store.state.products.data.find(item => item.id ==props.id)
+  store.state.products.data.splice(store.state.products.data.indexOf(product),1)
+  store.state.cart.data.push(product)
 }
 
 </script>
