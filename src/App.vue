@@ -2,13 +2,14 @@
 import Cart from './components/Cart.vue'
 import Products from './components/Products.vue'
 import { useStore } from 'vuex'
-
+import Search from './Search.vue'
 
 
 export default {
   components: {
     Cart,
-    Products
+    Products,
+    Search,
   },
   data() {
     return {
@@ -26,9 +27,11 @@ export default {
 
     return {
       products,
-      cart
+      cart,
+      
     }
-  }
+  },
+  
 }
 </script>
 
@@ -42,5 +45,13 @@ export default {
     <div>
       <RouterView />
     </div>
+    <form>
+      <Search />
+    
+    </form>
+    
   </div>
+ 
+  
+  
 </template>
