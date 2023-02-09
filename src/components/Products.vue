@@ -7,8 +7,7 @@ const store =useStore()
 
 const title=store.state.products.title
 const productsdata= store.state.products.data
-const action = store.state.cart.action
-
+const action = true
 
 </script>
 <template>

@@ -9,14 +9,10 @@ const props= defineProps({
 
 const store = useStore()
 function addToWishList(){
-  let product=store.state.products.data.find(item => item.id ==props.id)
-  store.state.products.data.splice(store.state.products.data.indexOf(product),1)
-  store.state.cart.data.push(product)
+ store.commit("addToWishList", props.id)
 }
-function removeFromWishList(){
-    let product=store.state.products.data.find(item => item.id ==props.id)
-  store.state.products.data.splice(store.state.products.data.indexOf(product),1)
-  store.state.cart.data.push(product)
+function removeFromWishList() {
+store.commit("removeFromWishList", props.id)
 }
 
 </script>

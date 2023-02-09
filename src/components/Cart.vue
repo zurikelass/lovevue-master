@@ -6,7 +6,7 @@ import { useStore } from 'vuex';
 const store =useStore()
 const title = store.state.cart.title
 const cartdata = store.state.cart.data
-const action = store.state.cart.action
+const action = false
 
 </script>
 
