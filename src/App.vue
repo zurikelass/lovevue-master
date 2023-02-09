@@ -3,6 +3,8 @@ import Cart from './components/Cart.vue'
 import Products from './components/Products.vue'
 import { useStore } from 'vuex'
 
+
+
 export default {
   components: {
     Cart,
@@ -12,7 +14,8 @@ export default {
     return {
       menu: [
         { routeName: 'Home', title: 'Main Page' },
-        { routeName: 'About', title: 'About Us' }
+        { routeName: 'About', title: 'About Us' },
+        
       ]
     }
   },

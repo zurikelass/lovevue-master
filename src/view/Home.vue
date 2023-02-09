@@ -1,7 +1,10 @@
+<script setup>
+import Products from '../components/Products.vue';
+</script>
 <template>
     <div>
         <h1>
-            Home page
+            <Products/>
         </h1>
     </div>
 </template>
