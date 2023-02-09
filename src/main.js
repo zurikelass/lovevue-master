@@ -2,7 +2,7 @@ import { createApp } from "vue"
 import App from "./App.vue"
 import { createStore } from "vuex"
 import "./assets/main.css"
-
+import router from "./router/index.js"
 const app = createApp(App)
 
 const store = createStore({
@@ -22,8 +22,9 @@ const store = createStore({
             title: "WishList",
             action:false,
             data: [],
-          }
-          
+          },
+         
+    
          
         };
     },
@@ -38,16 +39,11 @@ const store = createStore({
         state.cart.data.splice(state.cart.data.indexOf(product), 1)
        state.products.data.push(product)
        },
-
-
-      
-
-
-
-    }
+    },
+    
 })
 
-
 createApp(App)
+.use(router)
 .use(store)
 .mount('#app')
