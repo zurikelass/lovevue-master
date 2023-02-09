@@ -36,7 +36,7 @@ const store = createStore({
        removeFromWishList(state, payload){
         let product = state.cart.data.find(item => item.id == payload)
         state.cart.data.splice(state.cart.data.indexOf(product), 1)
-        product.data.push(product)
+       state.products.data.push(product)
        },
 
 
