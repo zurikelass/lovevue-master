@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import Cart from './components/Cart.vue'
 import Products from './components/Products.vue'
 import { useStore } from 'vuex'
@@ -36,6 +36,7 @@ export default {
 </script>
 
 <template>
+  <Layout>
   <div class="container flex flex-col mt-4 mx-auto space-y-4">
     <div class="flex flex-row space-x-4">
       <RouterLink v-for="(item, index) in menu" :key="index" :to="{ name: item.routeName }">
@@ -51,7 +52,7 @@ export default {
     </form>
     
   </div>
- 
+</Layout>
   
   
 </template>

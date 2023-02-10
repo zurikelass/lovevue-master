@@ -47,7 +47,7 @@ const store = createStore({
 })
 
 createApp(App)
-.component("search-component", Search)
+
 .use(router)
 .use(store)
 .mount('#app')
