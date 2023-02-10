@@ -1,18 +1,18 @@
-<script>
-export default {
-  data() {
-    return {
-      searchTerm: ''
-    };
-  },
-  computed: {
-    filteredProducts() {
-      return this.$store.state.products.data.filter(product => {
-        return product.name.toLowerCase().includes(this.searchTerm.toLowerCase());
-      });
-    }
-  }
-};
+<script setup>
+import {ref, computed} from 'vue'
+import { useStore } from 'vuex';
+
+const searchTerm= ref('')
+const store= useStore()
+const filteredProducts = computed(() => {
+  return store.getters.getProducts.filter(product => 
+         product.name.toLowerCase().includes(searchTerm.value.toLowerCase())
+      );
+}
+)
+
+  
+
 </script>
 <template>
   <div>

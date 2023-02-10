@@ -5,8 +5,8 @@ import { useStore } from 'vuex'
 
 const store =useStore()
 
-const title=store.state.products.title
-const productsdata= store.state.products.data
+const title=store.getters.getProductsListTitle
+const productsdata= store.getters.getProducts
 const action = true
 
 </script>
