@@ -1,7 +1,7 @@
 <script setup>
-import navigationMenu from './components/menu/navigationMenu.vue'
-import Search from './Search.vue'
-import mainLayout from './layouts/mainLayout.vue'
+import navigationMenu from "./components/menu/navigationMenu.vue";
+import Search from "./Search.vue";
+import mainLayout from "./layouts/mainLayout.vue";
 </script>
 
 <template>
