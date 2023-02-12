@@ -1,6 +1,5 @@
 <script setup>
 import navigationMenu from "./components/menu/navigationMenu.vue";
-import Search from "./Search.vue";
 import mainLayout from "./layouts/mainLayout.vue";
 </script>
 
@@ -11,9 +10,6 @@ import mainLayout from "./layouts/mainLayout.vue";
       <div>
         <RouterView />
       </div>
-      <form>
-        <Search />
-      </form>
     </div>
   </mainLayout>
 </template>

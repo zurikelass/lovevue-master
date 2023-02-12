@@ -1,5 +1,5 @@
 <script setup>
-defineProps ({
+defineProps({
     title: { type:String ,
               requered: true }
 })

@@ -22,21 +22,32 @@ const productsModule = {
     getProductsListTitle(state) {
       return state.products.title;
     },
+    getCartTitle(state) {
+      return state.cart.title;
+    },
     getProducts(state) {
       return state.products.data;
     },
+    getCart(state) {
+      return state.cart.data
+    }
   },
   mutations: {
     addToWishList(state, payload) {
-      let product = state.products.data.find((item) => item.id == payload);
+      const product = state.products.data.find((item) => item.id == payload);
       state.products.data.splice(state.products.data.indexOf(product), 1);
       state.cart.data.push(product);
     },
     removeFromWishList(state, payload) {
-      let product = state.cart.data.find((item) => item.id == payload);
+      const product = state.cart.data.find((item) => item.id == payload);
       state.cart.data.splice(state.cart.data.indexOf(product), 1);
       state.products.data.push(product);
     },
+
+    search(state, payload) {
+      state.products.data = state.products.data.filter(item => item.name.toLowerCase().includes(payload))
+      console.log(state.products)
+    }
   },
 };
 export default productsModule;

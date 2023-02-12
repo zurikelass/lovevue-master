@@ -2,15 +2,14 @@ const navigationModule ={
     state(){
         return {
             menu : [
-                { routeName: 'Home', title: 'Main Page' },
-                { routeName: 'About', title: 'About Us' },
+                { routeName: 'watchlist', title: 'Watchlist' },
+                { routeName: 'wishlist', title: 'Wishlist' },
             ]
         }
     },
     getters:{
         navigationMenu(state){
           return state.menu
-  
         }
       },
 }
