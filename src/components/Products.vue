@@ -7,6 +7,7 @@ const store =useStore()
 
 const title=store.getters.getProductsListTitle
 const productsdata= store.getters.getProducts
+
 const action = true
 
 </script>

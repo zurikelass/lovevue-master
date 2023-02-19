@@ -5,11 +5,12 @@ import Search from '../../Search.vue';
  const menu = store.getters.navigationMenu
 </script>
 <template>
-      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900;"  style="background-color: aqua;
+    border-radius: 15px;">
+      <div class="container flex flex-wrap items-center justify-between mx-auto ">
       <a href="#" class="flex items-center">
-          <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Love Vue</span>
       </a>
       <Search />
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">

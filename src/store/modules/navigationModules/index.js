@@ -4,6 +4,8 @@ const navigationModule ={
             menu : [
                 { routeName: 'watchlist', title: 'Watchlist' },
                 { routeName: 'wishlist', title: 'Wishlist' },
+                { routeName: 'currencies', title: 'Currencies' },
+                { routeName: 'slider', title: 'Slider' },
             ]
         }
     },

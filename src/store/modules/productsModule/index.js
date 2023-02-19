@@ -46,7 +46,6 @@ const productsModule = {
 
     search(state, payload) {
       state.products.data = state.products.data.filter(item => item.name.toLowerCase().includes(payload))
-      console.log(state.products)
     }
   },
 };
