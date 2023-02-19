@@ -1,5 +1,8 @@
+<script setup>
 
+ </script>
 <template>
+  
     <div class="layout">
       <header>
         <slot name="header"></slot>
